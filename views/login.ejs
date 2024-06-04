@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form {
+            padding: 50px;
+            left: 4rem;
+            position: absolute;
+            top: 5rem;
+            box-shadow: 2px 2px 2px 2px rgb(140, 78, 78);
+            /* border: 2px solid black;  */
+        }
+        p{
+            margin-left: 4rem;
+            justify-content: center;
+            font-weight: bold;
+        }
+        input {
+            border: 2px solid black;
+            font-size: 25px;
+            width: 50vw;
+        }
+        .submit {
+            background-color: rgb(65, 156, 65);
+            color: white;
+            margin-top: 2rem;
+            margin-left: 3rem;
+            border-radius: 5px;
+            padding: 7px;
+            border: none;
+        }
+        .submit:hover {
+            background-color: rgb(25, 124, 25);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<%- include("./partials/nav.ejs") %>
+<body>
+    <form action="/user/login" method="post">
+        <b>Email :</b><br> 
+        <input type="email" name="email" id="email" placeholder="enter email address" /><br>
+        <b>Password :</b> <br>
+        <input type="password" id="password" name="password" placeholder="enter your password"/><br>
+        <button class="submit">Submit</button>
+        <p>No account?  <a href="/user/signup">Sign up</a></p>
+    </form>
+</body>
+</html>

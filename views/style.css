@@ -1,0 +1,41 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+input {
+    font-size: 20px;
+    margin-top: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    margin-left: 32rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+#messages {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    background-color: rgb(73, 205, 73);
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+    background-color: hsl(76, 96%, 49%);
+}
